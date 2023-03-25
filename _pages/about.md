@@ -20,13 +20,13 @@ Education
 
 Publications
 ======
-##### [Detection of Osteoarthritis from Multimodal Hand Data](https://ieeexplore.ieee.org/abstract/document/9871560), 
-**J.J. Andrade Guerreiro**, Y. Aoki, S. Saito and K. Suzuki,
-_2022 44th Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC)_, Glasgow, 2022, pp. 3607-3610
+[Detection of Osteoarthritis from Multimodal Hand Data](https://ieeexplore.ieee.org/abstract/document/9871560), 
+#### **J.J. Andrade Guerreiro**, Y. Aoki, S. Saito and K. Suzuki,
+#### _2022 44th Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC)_, Glasgow, 2022, pp. 3607-3610
 
-##### PCT-Net: Full-Resolution Image Harmonization Using Pixel-Wise Color Transformations
-**J.J. Andrade Guerreiro**, M. Nakazawa, B. Stenger,
-_The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)_, 2023 _(accepted)_ 
+PCT-Net: Full-Resolution Image Harmonization Using Pixel-Wise Color Transformations
+#### **J.J. Andrade Guerreiro**, M. Nakazawa, B. Stenger,
+#### _The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)_, 2023 _(accepted)_ 
 
 
 Certifications
