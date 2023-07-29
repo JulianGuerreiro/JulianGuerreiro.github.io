@@ -25,9 +25,9 @@ Publications
 **J.J. Andrade Guerreiro**, Y. Aoki, S. Saito and K. Suzuki,
 _2022 44th Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC)_, Glasgow, 2022, pp. 3607-3610
 
-PCT-Net: Full-Resolution Image Harmonization Using Pixel-Wise Color Transformations
+[PCT-Net: Full-Resolution Image Harmonization Using Pixel-Wise Color Transformations](https://openaccess.thecvf.com/content/CVPR2023/html/Guerreiro_PCT-Net_Full_Resolution_Image_Harmonization_Using_Pixel-Wise_Color_Transformations_CVPR_2023_paper.html)
 **J.J. Andrade Guerreiro**, M. Nakazawa, B. Stenger,
-_The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)_, 2023 _(accepted)_ 
+_Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)_, 2023, pp. 5917-5926
 
 
 Certifications
