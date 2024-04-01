@@ -165,7 +165,7 @@ span.highlight {
 }
 @media only screen and (max-width: 600px) {
   .centered-image {
-    max-width: 95%;
+    max-width: 60%;
     height: auto;
   }
 }
