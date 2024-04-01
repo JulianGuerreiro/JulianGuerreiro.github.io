@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>LayoutFlow</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:image" content="https:">
+    <meta property="og:image:type" content="https://julianguerreiro.github.io/images/layoutflow.png">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="800">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="julianguerreiro.github.io/layoutflow"/>
+    <meta property="og:title" content="LayoutFlow: Flow Matching for Layout Generation" />
+    <meta property="og:description" content="Finding a suitable layout represents a crucial task for diverse applications in graphic design. Motivated by simpler and smoother sampling trajectories, we explore the use of Flow Matching as an alternative to current diffusion-based layout generation models. Specifically, we propose LayoutFlow, an efficient flow-based model capable of generating high-quality layouts. Instead of progressively denoising the elements of a noisy layout, our method learns to gradually move, or flow, the elements of an initial sample until it reaches its final prediction. In addition, we employ a conditioning scheme that allows us to handle various generation tasks with varying degrees of conditioning with a single model. Empirically, LayoutFlow performs on par with state-of-the-art models while being significantly faster." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="LayoutFlow: Flow Matching for Layout Generation" />
+    <meta name="twitter:description" content="Finding a suitable layout represents a crucial task for diverse applications in graphic design. Motivated by simpler and smoother sampling trajectories, we explore the use of Flow Matching as an alternative to current diffusion-based layout generation models. Specifically, we propose LayoutFlow, an efficient flow-based model capable of generating high-quality layouts. Instead of progressively denoising the elements of a noisy layout, our method learns to gradually move, or flow, the elements of an initial sample until it reaches its final prediction. In addition, we employ a conditioning scheme that allows us to handle various generation tasks with varying degrees of conditioning with a single model. Empirically, LayoutFlow performs on par with state-of-the-art models while being significantly faster." />
+    <meta name="twitter:image" content="https://julianguerreiro.github.io/images/layoutflow.png" />
+
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💫</text></svg>">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <b>LayoutFlow</b>: Flow Matching for <br> Layout Generation </br> 
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://julianguerreiro.github.io">
+                          Julian Jorge Andrade Guerreiro
+                        </a>
+                        </br>The University of Tokyo
+                    </li>
+                    <li>
+                        <a href="https://naoto0804.github.io/">
+                            Naoto Inoue
+                        </a>
+                        </br>CyberAgent
+                    </li>
+                    <li>
+                        <a href="https://cyberagent.ai/ailab/people/k_masui/">
+                          Kento Masui
+                        </a>
+                        </br>CyberAgent
+                    </li><br>
+                    <li>
+                        <a href="https://mayu-ot.github.io/">
+                          Mayu Otani 
+                        </a>
+                        </br>CyberAgent
+                    </li>
+                    <li>
+                        <a href="https://www.nlab.ci.i.u-tokyo.ac.jp/~nakayama/index_en.html">
+                          Hideki Nakayama
+                        </a>
+                        </br>The University of Tokyo
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="https://arxiv.org/abs/2111.12077">
+                            <image src="img/arxiv-logo.png" height="60px">
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <image src="img/github.png" height="60px">
+                                <h4><strong>Code (Coming soon)</strong></h4>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                  <image src="img/overview.png" />
+            </div>
+            <div class="col-md-8 col-md-offset-2">
+							<p class="text-center">
+                                <b>We show that Flow Matching produces smoother and directed trajectories during the layout generation process compared to diffusion models, significantly speeding up performance and overall improving performance.</b> 
+
+                            </p>
+						</div>
+        </div>
+
+
+        <div class="row">
+            <br>
+        </br>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    <center>
+                        <b>Abstract</b>
+                    </center>
+                </h3>
+                <p class="text-justify"></p>
+                    Finding a suitable layout represents a crucial task for diverse applications in graphic design. Motivated by simpler and smoother sampling trajectories, we explore the use of Flow Matching as an alternative to current diffusion-based layout generation models. Specifically, we propose LayoutFlow, an efficient flow-based model capable of generating high-quality layouts. Instead of progressively denoising the elements of a noisy layout, our method learns to gradually move, or flow, the elements of an initial sample until it reaches its final prediction. In addition, we employ a conditioning scheme that allows us to handle various generation tasks with varying degrees of conditioning with a single model. Empirically, LayoutFlow performs on par with state-of-the-art models while being significantly faster.
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    <br></br>
+                    Overview
+                    <br></br>
+                </h3>
+                <div class="text-center">
+                    <div>
+                        <image src="img/training.png"/>   
+                    </div>
+                    <p class="text-justify"></p>
+                    <b>Training Procedure</b> 
+                    <br></br>
+                </p>
+                </div>
+                <div class="text-center">
+                    <div>
+                        <image src="img/inference.png" width="500px"/>   
+                         
+                    </div>
+                    <p class="text-justify"></p>
+                    <b>Layout Generation</b> 
+                </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    <br></br>
+                    Results
+                    <br></br>
+                </h3>
+                <div class="text-center">
+                    <div>
+                        <image src="img/speedquality.png" width="500px"/>   
+                    </div>
+                    <p class="text-justify"></p>
+                    <b>Speed-Quality Comparison on the RICO Unconditional Generation Task </b>   
+                    <br></br>
+                </p>
+                </div>
+                <div class="text-center">
+                    <div>
+                        <image src="img/rico_uncond.png" width="929px"/>   
+                    </div>
+                    <p class="text-justify"></p>
+                    <b>Unconditional Generation RICO</b>
+                    <br></br>    
+                </p>
+                </div>
+                <div class="text-center">
+                    <div>
+                        <image src="img/rico_cond.png" width="1104px"/>   
+                    </div>
+                    <p class="text-justify"></p>
+                    <b>Type-conditioned Generation RICO</b>
+                    <br></br>
+                </p>
+                </div>
+                <div class="text-center">
+                    <div>
+                        <image src="img/rico_refinement.png" width="897px"/>   
+                    </div>
+                    <p class="text-justify"></p>
+                    <b>Refinement RICO</b>
+                    <br></br>
+                </p>
+                </div>
+                <div class="text-center">
+                    <div>
+                        <image src="img/publaynet_sizecond.png" width="756"/>   
+                    </div>
+                    <p class="text-justify"></p>
+                    <b>Type+Size-conditioned Generation PubLayNet  </b>
+                    <br></br> 
+                </p>
+                </div>
+                <div class="text-center">
+                    <div>
+                        <image src="img/publaynet_elemcomp2.png" width="903"/>   
+                    </div>
+                    <p class="text-justify"></p>
+                    <b>Element Completion PubLayNet</b>
+                    <br></br> 
+                </p>
+                </div>
+            </div>
+        </div>
+            
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" readonly>
+@article{guerreiro2024layoutflow,
+title={LayoutFlow: Flow Matching for Layout Generation},
+author={Guerreiro, Julian Jorge Andrade and Inoue, Naoto and Masui, Kento and Otani, Mayu and Nakayama, Hideki},
+journal={arXiv preprint arXiv:2403.18187},
+year={2024}
+}</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+                We thank the <a href="https://jonbarron.info/mipnerf360/"> Mip-NeRF 360</a> website for providing the template.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
