@@ -161,13 +161,8 @@ span.highlight {
 .centered-image {
   display: inline-block;
   margin: auto;
-  max-width: fit-content;
-}
-@media only screen and (max-width: 600px) {
-  .centered-image {
-    max-width: 100%;
-    height: auto;
-  }
+  max-width: 75%;
+  height: auto;
 }
 
 .caption{
