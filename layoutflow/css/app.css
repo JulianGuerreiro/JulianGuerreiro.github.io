@@ -169,13 +169,8 @@ span.highlight {
   }
 }
 
-.centered-image-small {
-  display: block;
-  margin: 0 auto;
-}
-@media only screen and (max-width: 300px) {
-  .centered-image-small {
-    max-width: 50%;
-    height: auto;
-  }
+.caption{
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 30px;
 }
