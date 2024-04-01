@@ -157,3 +157,25 @@ span.highlight {
 	margin-left: 0.5em;
 	margin-right: 0.5em;
 }
+
+.centered-image {
+  display: block;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 600px) {
+  .centered-image {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.centered-image-small {
+  display: block;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 300px) {
+  .centered-image-small {
+    max-width: 50%;
+    height: auto;
+  }
+}
