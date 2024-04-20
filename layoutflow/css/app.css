@@ -180,3 +180,10 @@ span.highlight {
   margin-bottom: 20px;
   text-align: center;
 }
+
+.gifImage{
+  display: inline-block;
+  margin: auto;
+  max-width: 75%;
+  height: auto;
+}
