@@ -170,3 +170,13 @@ span.highlight {
   padding-top: 15px;
   padding-bottom: 30px;
 }
+
+.gif-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.gif-item{
+  margin-bottom: 20px;
+  text-align: center;
+}
