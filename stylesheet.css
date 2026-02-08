@@ -133,3 +133,29 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.lang-btn {
+  background: none;
+  border: 1px solid #1772d0;
+  color: #1772d0;
+  padding: 6px 10px;
+  margin-left: 6px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.lang-btn.active {
+  background: #1772d0;
+  color: #fff;
+}
+
+.lang-btn:focus,
+.lang-btn:hover {
+  color: #f09228;
+  border-color: #f09228;
+}
+
+.lang-divider {
+  margin-left: 6px;
+}

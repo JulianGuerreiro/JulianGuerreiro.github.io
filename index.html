@@ -14,6 +14,13 @@
 </head>
 
 <body>
+  <div id="lang-toggle" aria-label="Language switcher">
+    <div style="max-width:800px;margin:0 auto;text-align:right;padding:10px 0;">
+      <button class="lang-btn active" data-lang="en" type="button">EN</button>
+      <span class="lang-divider" aria-hidden="true">|</span>
+      <button class="lang-btn" data-lang="jp" type="button">JP</button>
+    </div>
+  </div>
   <table
     style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
@@ -27,28 +34,28 @@
               <tr style="padding:0px">
                 <td style="padding:2.5%;width:63%;vertical-align:middle">
                   </p>
-                  <p>
+                  <p data-i18n="intro-phd">
                     I'm a PhD student at <a href="https://www.u-tokyo.ac.jp/en/index.html">The University of
                       Tokyo</a> under the supervision of <a
                       href=https://www.nlab.ci.i.u-tokyo.ac.jp/~nakayama/index_en.html>Professor Hideki Nakayama</a>.
                   </p>
                   <p>
-                    I'm generally interested in computer vision and generative models, both from a theoretical and applied perspective. In particular, I've been working on/interested in the following areas:
+                    <span data-i18n="interests-intro">I'm generally interested in computer vision and generative models, both from a theoretical and applied perspective. In particular, I've been working on/interested in the following areas:</span>
                     <ul>
-                      <li>Diffusion and Flow-based Models</li>
-                      <li>Multimodal Layout Generation</li>
-                      <li>Image Processing and Editing</li>
-                      <li>World Models and Video Prediction</li>
+                      <li data-i18n="interest-1">Diffusion and Flow-based Models</li>
+                      <li data-i18n="interest-2">Multimodal Layout Generation</li>
+                      <li data-i18n="interest-3">Image Processing and Editing</li>
+                      <li data-i18n="interest-4">World Models and Video Prediction</li>
                     </ul>
                   </p>
-                  <p>
+                  <p data-i18n="double-masters">
                     As part of a double master's degree program, I graduated from <a
                       href=https://www.rwth-aachen.de/cms/~a/root/?lidx=1>RWTH Aachen University</a> (supervised by <a
                       href="https://www.ient.rwth-aachen.de/cms/ohm_en/">Professor Jens-Rainer Ohm</a>) and <a
                       href="https://www.keio.ac.jp/en/">Keio University</a> (supervised by <a
                       href="https://aoki-medialab.jp/aokiyoshimitsu-en/">Professor Yoshimitsu Aoki</a>).
                   </p>
-                  <p>
+                  <p data-i18n="internships">
                     During my
                     internships at <a href="https://rit.rakuten.com">Rakuten Institute of Technology</a>, <a
                       href="https://www.preferred.jp/en/">Preferred Networks</a>, <a
@@ -56,8 +63,8 @@
                     as a research scientist. I have also been collaborating with researchers from <a
                       href="https://cyberagent.ai/ailab/">CyberAgent AI Lab</a> on a joint research project.
                   </p>
-                  <p>
-                    I expect to finish my PhD in September 2026 and am open to job or internship opportunities.
+                  <p data-i18n="phd-finish">
+                    I expect to finish my PhD in March 2027. I am open to job or internship opportunities.
                   </p>
                   <br>
                   <p style="text-align:center">
@@ -84,7 +91,7 @@
             <tbody>
               <tr>
                 <td style="padding:10px;width:100%;vertical-align:middle">
-                  <h2>Research</h2>
+                  <h2 data-i18n="research-heading">Research</h2>
                 </td>
               </tr>
             </tbody>
@@ -111,7 +118,7 @@
                   <a href="https://julianguerreiro.github.io/layoutflow">Project Page</a> /
                   <a href="https://github.com/JulianGuerreiro/LayoutFlow">Code</a>
                   <p></p>
-                  <p>Flow Matching for Layout Generation provides a more geometrically intuitive approach, while also
+                  <p data-i18n="layoutflow-desc">Flow Matching for Layout Generation provides a more geometrically intuitive approach, while also
                     significantly speeding up the generation process.</p>
                 </td>
               </tr>
@@ -135,7 +142,7 @@
                   <br>
                   <a href="https://github.com/rakutentech/PCT-Net-Image-Harmonization">Code</a>
                   <p></p>
-                  <p>We enable efficient full-resolution Image Harmonization by introducing pixel-wise color
+                  <p data-i18n="pctnet-desc">We enable efficient full-resolution Image Harmonization by introducing pixel-wise color
                     transformations (PCTs). Work was done while interning at Rakuten Institute of Technology.</p>
                 </td>
               </tr>
@@ -154,7 +161,7 @@
                   Suzuki
                   <br>
                   <em>EMBC</em>, 2022
-                  <p>We investigate the effectiveness of different modalities, namely RGB images, video, and thermal
+                  <p data-i18n="osteo-desc">We investigate the effectiveness of different modalities, namely RGB images, video, and thermal
                     images, to detect Osteoarthritis.</p>
                 </td>
               </tr>
@@ -167,7 +174,7 @@
             <tbody>
               <tr>
                 <td style="padding:20px;padding-bottom:0px;vertical-align:middle">
-                  <h2>Work Experience</h2>
+                  <h2 data-i18n="work-heading">Work Experience</h2>
                 </td>
               </tr>
             </tbody>
@@ -178,7 +185,16 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p>
+                <p data-i18n="work-sb">
+                  <a href="https://www.sbintuitions.co.jp/en/">
+                    <span class="papertitle">SB Intuitions</span>
+                  </a>
+                  <br>
+                  <em>Research Internship (Part-Time)</em>
+                  <br>
+                  February 2026 - present
+                </p>
+                <p data-i18n="work-adobe">
                   <a href="https://research.adobe.com">
                     <span class="papertitle">Adobe Research</span>
                   </a>
@@ -187,7 +203,7 @@
                   <br>
                   June 2025 - Sep 2025 
                 </p>
-                <p>
+                <p data-i18n="work-ly-pt">
                   <a href="https://research.lycorp.co.jp/en">
                     <span class="papertitle">LY Corporation</span>
                   </a>
@@ -196,7 +212,7 @@
                   <br>
                   Jan 2025 - May 2025 
                 </p>
-                <p>
+                <p data-i18n="work-ly-ft">
                   <a href="https://research.lycorp.co.jp/en">
                     <span class="papertitle">LY Corporation</span>
                   </a>
@@ -205,7 +221,7 @@
                   <br>
                   Aug 2024 - Oct 2024
                 </p>
-                <p>
+                <p data-i18n="work-pfn-pt">
                   <a href="https://www.preferred.jp/en/">
                     <span class="papertitle">Preferred Networks</span>
                   </a>
@@ -214,7 +230,7 @@
                   <br>
                   Oct 2023 - Apr 2024
                 </p>
-                <p>
+                <p data-i18n="work-pfn-ft">
                   <a href="https://www.preferred.jp/en/">
                     <span class="papertitle">Preferred Networks</span>
                   </a>
@@ -223,7 +239,7 @@
                   <br>
                   Aug 2023 - Sep 2024
                 </p>
-                <p>
+                <p data-i18n="work-utokyo">
                   <a href="https://www.i.u-tokyo.ac.jp/index_e.shtml">
                     <span class="papertitle">University of Tokyo</span>
                   </a>
@@ -233,9 +249,9 @@
                       CyberAgent
                     </a>) </em>
                   <br>
-                  May 2023 - now
+                  May 2023 - May 2025 
                 </p>
-                <p>
+                <p data-i18n="work-rakuten">
                   <a href="https://www.preferred.jp/en/">
                     <span class="papertitle">Rakuten Insitute of Technology</span>
                   </a>
@@ -253,7 +269,7 @@
             <tbody>
               <tr>
                 <td style="padding:20px;padding-bottom:0px;vertical-align:middle">
-                  <h2>Education</h2>
+                  <h2 data-i18n="education-heading">Education</h2>
                 </td>
               </tr>
             </tbody>
@@ -264,28 +280,28 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p>
+                <p data-i18n="edu-phd">
                   <span class="papertitle">University of Tokyo</span>
                   <br>
                   <em>Ph.D. course in Creative Informatics</em>
                   <br>
-                  Apr 2023 - Sep 2026 (expected)
+                  Apr 2023 - Mar 2027 (expected)
                 </p>
-                <span class="papertitle">Keio University</span>
-                <br>
-                <em>M.Sc. in Electrical Engineering</em>
-                <br>
-                Oct 2020 - Mar 2022
+                <p data-i18n="edu-keio">
+                  <span class="papertitle">Keio University</span>
+                  <br>
+                  <em>M.Sc. in Electrical Engineering</em>
+                  <br>
+                  Oct 2020 - Mar 2022
                 </p>
-                <p>
+                <p data-i18n="edu-rwth-msc">
                   <span class="papertitle">RWTH Aachen University</span>
                   <br>
                   <em>M.Sc. in Electrical Engineering</em>
                   <br>
                   Oct 2019 - Feb 2023
                 </p>
-                <p>
-                <p>
+                <p data-i18n="edu-rwth-bsc">
                   <span class="papertitle">RWTH Aachen University</span>
                   <br>
                   <em>B.Sc. in Electrical Engineering</em>
@@ -301,7 +317,7 @@
             <tbody>
               <tr>
                 <td style="padding:20px;padding-bottom:0px;vertical-align:middle">
-                  <h2>Reviewing</h2>
+                  <h2 data-i18n="reviewing-heading">Reviewing</h2>
                 </td>
               </tr>
             </tbody>
@@ -311,15 +327,15 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p>
+                <p data-i18n="review-journals">
                   <span class="papertitle">Journals:</span>
                     <br>
                     IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), New Generation Computing
                 </p>
-                <p>
+                <p data-i18n="review-confs">
                   <span class="papertitle">Conferences:</span>
                     <br>
-                    CVPR (2024, 2025), ICCV (2025), SIGGRAPH (2025), NeurIPS (2025), WACV (2025)
+                    CVPR (2024, 2025, 2026), ICCV (2025), ECCV (2026), SIGGRAPH (2025), NeurIPS (2025), WACV (2025)
                 </p>
               </td>
             </tbody>
@@ -335,7 +351,7 @@
       <tr>
         <td style="padding:0px">
           <br>
-          <p style="text-align:right;font-size:smaller;">
+          <p style="text-align:right;font-size:smaller;" data-i18n="footer">
             Website design is based on <a href="https://github.com/jonbarron/jonbarron_website"> this repository
             </a>.
           </p>
@@ -343,6 +359,77 @@
       </tr>
     </tbody>
   </table>
+  <script>
+    const translations = {
+      jp: {
+        "intro-phd": "東京大学で中山英樹教授の指導のもと、博士課程に在籍しています。",
+        "interests-intro": "主にコンピュータビジョンおよび生成モデルを対象に、理論・応用の両面から研究を行っています。現在は主に以下の分野に取り組んでいます。",
+        "interest-1": "拡散モデルとフローベースモデル",
+        "interest-2": "マルチモーダルなレイアウト生成",
+        "interest-3": "画像処理・編集",
+        "interest-4": "ワールドモデルと動画予測",
+        "double-masters": "ダブルディグリープログラムにより、RWTHアーヘン工科大学（指導: Jens-Rainer Ohm 教授）および慶應義塾大学（指導: 青木義満 教授）にて修士号を取得しました。",
+        "internships": "これまでにRakuten Institute of Technology、Preferred Networks、LY Corporation、Adobe Researchにて研究インターンとして活動しました。また、CyberAgent AI Labの研究者とも共同研究を行っていました。",
+        "phd-finish": "博士課程は2027年3月修了予定です。研究職およびインターンの機会に関心があります。",
+        "research-heading": "研究",
+        "layoutflow-desc": "",
+        "pctnet-desc": "",
+        "osteo-desc": "",
+        "work-heading": "職務経験",
+        "work-sb": "SB Intuitions <br>研究インターン<br>2026年2月 - 現在",
+        "work-adobe": "Adobe Research <br>Research Scientist/Engineer Intern<br>2025年6月 - 2025年9月",
+        "work-ly-pt": "LY Corporation <br>研究インターン<br>2025年1月 - 2025年5月",
+        "work-ly-ft": "LY Corporation <br>研究インターン<br>2024年8月 - 2024年10月",
+        "work-pfn-pt": "Preferred Networks <br>研究インターン<br>2023年10月 - 2024年4月",
+        "work-pfn-ft": "Preferred Networks <br>研究インターン<br>2023年8月 - 2024年9月",
+        "work-utokyo": "東京大学 <br>RA（サイバーエージェントとの共同研究）<br>2023年5月 - 2025年5月",
+        "work-rakuten": "Rakuten Institute of Technology <br>研究インターン（フルタイム）<br>2022年4月 - 2022年12月",
+        "education-heading": "学歴",
+        "edu-phd": "東京大学　創造情報学博士課程<br>2023年4月 - 2027年3月（予定）",
+        "edu-keio": "慶應義塾大学　電気工学修士<br>2020年10月 - 2022年3月",
+        "edu-rwth-msc": "RWTHアーヘン工科大学　電気工学修士<br>2019年10月 - 2023年2月",
+        "edu-rwth-bsc": "RWTHアーヘン工科大学　電気工学学士<br>2016年10月 - 2019年9月",
+        "reviewing-heading": "査読",
+        "review-journals": "ジャーナル: IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), New Generation Computing",
+        "review-confs": "会議: CVPR (2024, 2025, 2026), ICCV (2025), ECCV (2026), SIGGRAPH (2025), NeurIPS (2025), WACV (2025)",
+        "footer": "Webサイトのデザインはこのリポジトリをベースにしています。"
+      }
+    };
+
+    const buttons = document.querySelectorAll('.lang-btn');
+    const translatable = document.querySelectorAll('[data-i18n]');
+
+    function setLanguage(lang) {
+      document.documentElement.lang = lang === 'jp' ? 'ja' : 'en';
+      buttons.forEach(btn => btn.classList.toggle('active', btn.dataset.lang === lang));
+      translatable.forEach(el => {
+        const key = el.dataset.i18n;
+        if (lang === 'jp') {
+          const value = translations.jp[key];
+          if (value) {
+            el.innerHTML = value;
+          }
+        } else {
+          el.innerHTML = el.dataset.original;
+        }
+      });
+      localStorage.setItem('site-lang', lang);
+    }
+
+    // Store original HTML for fallback
+    translatable.forEach(el => {
+      el.dataset.original = el.innerHTML;
+    });
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
+    });
+
+    const saved = localStorage.getItem('site-lang');
+    if (saved === 'jp') {
+      setLanguage('jp');
+    }
+  </script>
   </td>
   </tr>
   </table>
