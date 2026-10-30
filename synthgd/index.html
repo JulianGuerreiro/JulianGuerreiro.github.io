@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>SynthGD</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:image" content="https://julianguerreiro.github.io/synthgd/img/thumbnail.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="800">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="julianguerreiro.github.io/synthgd"/>
+    <meta property="og:title" content="SynthGD: Leveraging Image Generation for Synthetic Graphic Design Data" />
+    <meta property="og:description" content="We propose a data pipeline that leverages state-of-the-art image generation models to create synthetic, structured graphic design data, decomposing generated designs into image, shape and text elements with recovered fonts." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SynthGD: Leveraging Image Generation for Synthetic Graphic Design Data" />
+    <meta name="twitter:description" content="We propose a data pipeline that leverages state-of-the-art image generation models to create synthetic, structured graphic design data, decomposing generated designs into image, shape and text elements with recovered fonts." />
+    <meta name="twitter:image" content="https://julianguerreiro.github.io/synthgd/img/thumbnail.png" />
+
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗒️</text></svg>">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <b>SynthGD</b>: Leveraging Image Generation for <br> Synthetic Graphic Design Data </br>
+                <small>
+                    WACV 2027
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://julianguerreiro.github.io">
+                          Julian Jorge Andrade Guerreiro
+                        </a>
+                        </br>The University of Tokyo
+                    </li>
+                    <li>
+                        <a href="https://www.nlab.ci.i.u-tokyo.ac.jp/~nakayama/index_en.html">
+                          Hideki Nakayama
+                        </a>
+                        </br>The University of Tokyo
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li style="opacity:0.45;cursor:default;" title="Coming soon">
+                            <a style="pointer-events:none;">
+                                <image src="img/arxiv-logo.png" height="60px">
+                                    <h4><strong>Paper</strong></h4>
+                                    <small><i>Coming soon</i></small>
+                            </a>
+                        </li>
+                        <li style="opacity:0.45;cursor:default;" title="Coming soon">
+                            <a style="pointer-events:none;">
+                                <image src="img/github.png" height="60px">
+                                    <h4><strong>Code &amp; Data</strong></h4>
+                                    <small><i>Coming soon</i></small>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+        <div class="row">
+            <br>
+        </br>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    <center>
+                        <b>Abstract</b>
+                    </center>
+                </h3>
+                <p class="text-justify">
+                    Graphic design can be encountered in a variety of situations in our daily lives, where it is used to attract attention, advertise products, or simply communicate information. Recent generative models have shown promising results in creating graphic designs, but they heavily rely on large amounts of closed-source data. Unlike simple raster images, graphic design data is layered, consisting of an arrangement of various elements, such as images, shapes, or text, which makes it more difficult to collect at scale. Public datasets are small, whereas crawling design templates online is constrained by permission and copyright restrictions. To address this limitation, we propose a data pipeline that leverages state-of-the-art image generation models to create synthetic, structured graphic design data. Specifically, we process raster images of graphic designs created by an image generation model and use an image-to-layer model to decompose the designs into raster elements. After classifying each element as an image, shape or text, we reconstruct text elements by detecting fonts and fitting them with a text renderer. Quantitative and qualitative evaluations, including user studies, confirm that our synthetic data generation approach produces graphic designs on par with real-world references. We further validate that training on our synthetic data improves performance on a downstream task, namely, layout generation. We will make the dataset and code publicly available.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+                    We thank the <a href="https://jonbarron.info/mipnerf360/"> Mip-NeRF 360</a> website for providing the template.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
